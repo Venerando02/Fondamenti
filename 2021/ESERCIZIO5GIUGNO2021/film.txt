@@ -1,0 +1,11 @@
+Il_favoloso_mondo_di_Amelie 0 2001-04-25
+Shutter_Island 1 2010-02-19
+La_La_Land 2 2016-12-09
+Interstellar 3 2014-11-07
+Mamma_Mia! 2 2008-07-03
+Matrix 3 1999-03-31
+Lupin_III_La_seconda_serie 0 1977-10-03
+Psycho 1 1960-06-16
+Blade_Runner 3 1982-06-25
+Il_Padrino 1 1972-03-24
+Quo_Vado? 0 2016-01-01

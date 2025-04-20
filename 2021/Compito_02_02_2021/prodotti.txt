@@ -1,0 +1,9 @@
+P0001 novita 10
+P00X2 esaurito 0
+P0004 disponibile 5
+P00X4 novita 8
+P00X5 novita 4
+P0100 esaurito 0
+P0101 esaurito 0
+P0301 disponibile 7
+P0302 disponibile 12
