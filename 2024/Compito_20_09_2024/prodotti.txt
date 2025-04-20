@@ -1,0 +1,9 @@
+P0001 venduto 10
+P00X2 venduto 10
+P0004 disponibile 5
+P00X4 venduto 8
+P00X5 venduto 4
+P00X2 prenotato 5
+P0101 prenotato 5
+P0301 disponibile 7
+P0302 disponibile 12
