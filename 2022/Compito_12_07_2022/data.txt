@@ -1,0 +1,23 @@
+5
+0 Simone
+1 Laura
+2 Salvatore
+3 Andrea
+4 Monica
+16
+0 Rossi 1.0
+0 Verdi 1.5
+0 Ferrari 0.8
+1 Russo 2.0
+1 Bianchi 4
+1 Romano 3
+1 Gallo 2
+2 Costa 1
+2 Fontana 3
+2 Conte 1.0
+3 Serra 4.0
+3 Farina 0.5
+4 Gentile 0.5
+4 Caruso 0.2
+4 Morelli 0.1
+4 Ferri 0.4

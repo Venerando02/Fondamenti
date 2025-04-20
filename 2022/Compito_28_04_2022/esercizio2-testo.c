@@ -1,0 +1,178 @@
+/*
+Sviluppare un programma per l'analisi delle spese effettuate dai
+clienti di una farmacia in una giornata. Le informazioni delle
+spese effettuate dai clienti, monitorate da una batteria di 5 casse,
+sono salvate in un file di testo in cui ogni riga contiene le seguenti
+informazioni:
+
+- Numero cassa (da 0 a 4)
+- Orario (formato (hh:mm)
+- Ricetta medica (si/no)
+- Scarico fiscale (si/no)
+- Totale spesa
+
+Implementare le seguenti funzioni:
+
+1) CaricaDati: Carica i dati contenuti nel file in un array di
+liste. L'elemento dell'array di inidice 'i' contiene la lista delle
+informazioni di spesa effettuate dai clienti alla cassa numero 'i'. La
+funzione restituisce il numero totale di clienti.
+
+2) ContaRicette: Data una fascia oraria, restituisce un array in cui
+l'elemento di indice 'i' contiene il numero di clienti che presentano
+la ricetta medica rilevato dalla cassa numero i.
+
+3) VisualizzaPercentualeClienti: Visualizza, per ogni cassa, la
+percentuale di clienti che effettuano lo scarico fiscale sul totale
+dei clienti transitati da quella cassa.
+
+La descrizione dettagliata di ogni funzione è riportata come commento
+immediatamente prima della definizione della funzione nello scheletro
+di programma fornito.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define NUM_CASSE 5
+
+typedef struct Acquisto
+{
+  char  orario[16];
+  int   ricetta_medica; // 1 = si, 0 = no
+  int   scarico_fiscale; // 1 = si, 0 = no
+  float totale;
+} TAcquisto;
+
+typedef struct NodoAcquisto
+{
+  TAcquisto            acquisto;
+  struct NodoAcquisto* succ;
+} TNodoAcquisto;
+
+typedef TNodoAcquisto* PNodoAcquisto;
+
+
+// Aggiunge un acquisto alla lista degli acquisti, restituisce 1 se
+// l'inserimento in lista è avvenuto correttamente, 0 altrimenti
+int AggiungiAcquisto(PNodoAcquisto* plista,
+		     TAcquisto acquisto)
+{
+  PNodoAcquisto p;
+
+  p = (PNodoAcquisto)malloc(sizeof(TNodoAcquisto));
+  if (p == NULL)
+    return 0;
+
+  p->acquisto = acquisto;
+  p->succ = *plista;
+  *plista = p;
+  
+  return 1;
+}
+
+/*
+1) CaricaDati: Carica i dati contenuti nel file in un array di
+liste. L'elemento dell'array di indice 'i' contiene la lista delle
+informazioni di spesa effettuate dai clienti alla cassa numero 'i'. La
+funzione restituisce il numero totale di clienti.
+
+Parametri: nome del file, array di liste di acquisti in cassa 
+Restituisce: il numero totale di clienti, -1 in caso di errore
+durante il caricamento
+*/
+int CaricaDati(char* nome_file,
+	       PNodoAcquisto* acquisti)
+{
+  // Implementare il corpo della funzione
+}
+
+/*
+2) ContaRicette: Data una fascia oraria, restituisce un array in cui
+l'elemento di indice 'i' contiene il numero di clienti che presentano
+la ricetta medica rilevato dalla cassa numero i.
+
+Parametri: fascia oraria (orario inizio e orario fine), array di liste
+
+Restituisce un array con il numero di clienti che presentano la
+ricetta medica rilevati in ogni cassa
+*/
+int* ContaRicette(PNodoAcquisto* acquisti,
+		  char* orario_inizio, char* orario_fine)
+{
+  // Implementare il corpo della funzione
+}
+
+/*
+3) VisualizzaPercentualeClienti: Visualizza, per ogni cassa, la
+percentuale di clienti che effettuano lo scarico fiscale sul totale
+dei clienti transitati da quella cassa.
+*/
+void VisualizzaPercentualeClienti(PNodoAcquisto* acquisti)
+{
+  // Implementare il corpo della funzione
+}
+
+//  Disalloca una lista di acquisti
+void DisallocaAcquisti(PNodoAcquisto acquisti)
+{
+  PNodoAcquisto p;
+  
+  while (acquisti != NULL)
+    {
+      p = acquisti;
+      acquisti = acquisti->succ;
+      free(p);
+    }
+}
+
+int Menu()
+{
+  int scelta;
+  
+  printf("*** MENU ***\n"
+	 "1. Carica dati\n"
+	 "2. Conta ricette\n"
+	 "3. Visualizza percentuale clienti\n"
+	 "0. Esci\n\n"
+	 "Scelta: ");
+  scanf("%d", &scelta);
+
+  return scelta;
+}
+
+int main(void)
+{
+  int           scelta, n;
+  PNodoAcquisto acquisti[NUM_CASSE];
+  int*          totale_ricette;
+  char          ora_inizio[16], ora_fine[16];
+  
+
+  do {
+    scelta = Menu();
+
+    switch (scelta)
+      {
+      case 1:
+	// Invocare la funzione CaricaDati e visualizzare il numero di
+	// acquisti effettuati o gli eventuali errori
+	break;
+
+      case 2:
+	// Acquisire la fascia oraria
+	// Invocare la funzione ContaRicette
+	// Visualizzare il numeri di acquisti con ricetta medica
+	break;
+
+      case 3:
+	// Invocare la funzione VisualizzaPercentualeClienti
+	break;
+      }
+  } while (scelta != 0);
+
+  // Disallocare la memoria
+  
+  return 0;
+}
