@@ -1,0 +1,7 @@
+AX789BR		berlina		34.50	10000	disponibile
+CY463RG		SUV			45.00	5600	noleggiata
+DR627TF		citycar		31.20	4500	disponibile
+FA872BN		monovolume	38.90	9800	noleggiata
+DW834NR		berlina		35.00	7800	noleggiata
+CT427HN		citycar		33.20	5200	disponibile
+DT815HF		SUV			48.00	3400	disponibile
