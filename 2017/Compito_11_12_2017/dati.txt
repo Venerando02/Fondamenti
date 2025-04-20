@@ -1,0 +1,6 @@
+Rossi 1980-12-11 3
+Ferrari 1975-06-15 1
+Esposito 1990-10-27 2
+Bianchi 1965-09-01 2
+Romano 1992-11-15 4
+Marino 1985-02-15 5

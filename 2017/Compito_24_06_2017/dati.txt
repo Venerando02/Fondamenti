@@ -1,0 +1,16 @@
+0000001
+Acqua_naturale
+Bibite
+0.30 200
+0000012
+Coca_cola
+Bibite
+1.00 100
+0000031
+Biscotti_ai_cereali
+Dolci
+3.50 300
+0001070
+Zucchine
+Frutta_e_verdura
+1.50 50
