@@ -1,0 +1,12 @@
+I123 pallavolo
+T1 12 Amato
+I234 basket
+T3 20 Pappalardo
+I345 calcio
+T34 23 Papale
+T789 calcio
+T1 12 Amato
+I989 pallavolo
+T2 21 Dante
+I231 hockey
+T56 13 Manzoni

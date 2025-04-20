@@ -1,0 +1,8 @@
+c123 Rossi Giuseppe Squadra1 200
+C124 Bianchi Luigi Squadra2 187
+c125 Russo Giovanna $$$ 234
+c002 Verdi Giuseppe Squadra2 201
+c001 Musumeci Venerando Squadra2 280
+c003 Musumeci Rosario Squadra2 300
+b001 Musumeci Alfio Squadra1 201
+d001 Nicolosi Alfio SquadraGinew 10000
